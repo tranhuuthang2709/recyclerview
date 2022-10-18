@@ -2,13 +2,16 @@ package com.example.recyclerview;
 
 public class food {
     private int image;
-    private String name;
+    private String title;
     private int type;
 
-    public food(int image, String name, int type) {
+    public food(int image, String title, int type) {
         this.image = image;
-        this.name = name;
+        this.title = title;
         this.type = type;
+    }
+
+    public food(int comchien, String cơm_chiên) {
     }
 
     public int getImage() {
@@ -19,12 +22,12 @@ public class food {
         this.image = image;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public int getType() {
